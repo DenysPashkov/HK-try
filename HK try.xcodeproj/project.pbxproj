@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E00554D223D856D7009E734A /* HeartMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00554D123D856D7009E734A /* HeartMonitor.swift */; };
+		E00554D623DA3FE2009E734A /* HKRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00554D523DA3FE2009E734A /* HKRate.swift */; };
 		E05C5AC923D6477100FB7D5E /* HK try WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E05C5AC823D6477100FB7D5E /* HK try WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E05C5ACF23D6477100FB7D5E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E05C5ACD23D6477100FB7D5E /* Interface.storyboard */; };
 		E05C5AD123D6477200FB7D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E05C5AD023D6477200FB7D5E /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 		E05C5AE523D6477200FB7D5E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05C5AE423D6477200FB7D5E /* NotificationView.swift */; };
 		E05C5AE723D6477300FB7D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E05C5AE623D6477300FB7D5E /* Assets.xcassets */; };
 		E05C5AEA23D6477300FB7D5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E05C5AE923D6477300FB7D5E /* Preview Assets.xcassets */; };
+		E05C5AFF23D73CEE00FB7D5E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05C5AFE23D73CEE00FB7D5E /* File.swift */; };
+		E05C5B0023D73FD100FB7D5E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05C5AFC23D649E800FB7D5E /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E00554D123D856D7009E734A /* HeartMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartMonitor.swift; sourceTree = "<group>"; };
+		E00554D523DA3FE2009E734A /* HKRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKRate.swift; sourceTree = "<group>"; };
 		E05C5AC423D6477100FB7D5E /* HK try.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HK try.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05C5AC823D6477100FB7D5E /* HK try WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HK try WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05C5ACE23D6477100FB7D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -78,6 +84,9 @@
 		E05C5AE923D6477300FB7D5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E05C5AEB23D6477300FB7D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E05C5AEC23D6477300FB7D5E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E05C5AFA23D649E800FB7D5E /* HK try WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HK try WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		E05C5AFC23D649E800FB7D5E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		E05C5AFE23D73CEE00FB7D5E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05C5B0023D73FD100FB7D5E /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +107,7 @@
 				E05C5ACC23D6477100FB7D5E /* HK try WatchKit App */,
 				E05C5ADB23D6477200FB7D5E /* HK try WatchKit Extension */,
 				E05C5AC523D6477100FB7D5E /* Products */,
+				E05C5AFB23D649E800FB7D5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +134,7 @@
 		E05C5ADB23D6477200FB7D5E /* HK try WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E05C5AFA23D649E800FB7D5E /* HK try WatchKit Extension.entitlements */,
 				E05C5ADC23D6477200FB7D5E /* ContentView.swift */,
 				E05C5ADE23D6477200FB7D5E /* HostingController.swift */,
 				E05C5AE023D6477200FB7D5E /* ExtensionDelegate.swift */,
@@ -132,6 +144,9 @@
 				E05C5AEB23D6477300FB7D5E /* Info.plist */,
 				E05C5AEC23D6477300FB7D5E /* PushNotificationPayload.apns */,
 				E05C5AE823D6477300FB7D5E /* Preview Content */,
+				E05C5AFE23D73CEE00FB7D5E /* File.swift */,
+				E00554D123D856D7009E734A /* HeartMonitor.swift */,
+				E00554D523DA3FE2009E734A /* HKRate.swift */,
 			);
 			path = "HK try WatchKit Extension";
 			sourceTree = "<group>";
@@ -142,6 +157,14 @@
 				E05C5AE923D6477300FB7D5E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E05C5AFB23D649E800FB7D5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E05C5AFC23D649E800FB7D5E /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E05C5ADF23D6477200FB7D5E /* HostingController.swift in Sources */,
+				E05C5AFF23D73CEE00FB7D5E /* File.swift in Sources */,
 				E05C5ADD23D6477200FB7D5E /* ContentView.swift in Sources */,
 				E05C5AE323D6477200FB7D5E /* NotificationController.swift in Sources */,
+				E00554D223D856D7009E734A /* HeartMonitor.swift in Sources */,
 				E05C5AE123D6477200FB7D5E /* ExtensionDelegate.swift in Sources */,
+				E00554D623DA3FE2009E734A /* HKRate.swift in Sources */,
 				E05C5AE523D6477200FB7D5E /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HK try WatchKit Extension/HK try WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HK try WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 44MJBDB342;
@@ -447,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HK try WatchKit Extension/HK try WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HK try WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 44MJBDB342;
